@@ -9,7 +9,7 @@
   "printWidth": 80,
   "quoteProps": "consistent",
   "semi": false,
-  "singleAttributePerLine": true,
+  "singleAttributePerLine": false,
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
