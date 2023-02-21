@@ -4,7 +4,7 @@
   "frontend:dir": "frontend",
   "frontend:install": "yarn install",
   "frontend:build": "yarn build",
-  "frontend:dev:watcher": "yarn dev",
+  "frontend:dev:watcher": "yarn dev --host",
   "frontend:dev:serverUrl": "auto",
   "version": "0.1.0",
   "outputfilename": "YTM",
