@@ -2,11 +2,8 @@ package main
 
 import (
 	"embed"
-	"fmt"
 
 	"github.com/wailsapp/wails/v2"
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/menu/keys"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
 )
@@ -18,23 +15,11 @@ func main() {
 	// Create an instance of the app structure
 	app := NewApp()
 
-	// Attempting a menu
-	AppMenu := menu.NewMenu()
-	FileMenu := AppMenu.AddSubmenu("File")
-	FileMenu.AddText("Open", keys.CmdOrCtrl("o"), func(_ *menu.CallbackData) {
-		fmt.Println("Open func called!")
-	})
-	FileMenu.AddSeparator()
-	FileMenu.AddText("Quit", keys.CmdOrCtrl("q"), func(_ *menu.CallbackData) {
-		fmt.Println("Quit func called!")
-	})
-
 	// Create application with options
 	err := wails.Run(&options.App{
 		Title:  "fttwails",
 		Width:  1024,
 		Height: 768,
-		Menu:   AppMenu,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
