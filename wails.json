@@ -4,7 +4,6 @@
   "frontend:dir": "frontend",
   "frontend:install": "yarn install",
   "frontend:build": "yarn build",
-  "frontend:dev": "[This command has been replaced by frontend:dev:build. If frontend:dev:build is not specified will falls back to this command. \nIf this command is also not specified will falls back to frontend:build]",
   "frontend:dev:watcher": "yarn dev",
   "frontend:dev:serverUrl": "auto",
   "version": "0.1.0",
